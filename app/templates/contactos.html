@@ -1,0 +1,88 @@
+{% extends 'index.html' %} {% block content %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/cont.css' %} " />
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 1 d-flex justify-content-center">
+      <section
+        class="cajita d-flex justify-content-center d-flex align-items-center text-center"
+      >
+        <div class="row">
+          <div class="col-lg-12">
+            <form action="" method="post" class="form">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-lg-12 cont">
+                  <h1 class="text-warning"><strong>Contactanos</strong></h1>
+                </div>
+
+                <div class="col-lg-12 cont">
+                  <label for="gmail-cliente">Gmail</label>
+                  <input
+                    class="text-center"
+                    type="email"
+                    id="gmail-cliente"
+                    name="gmail-contacto"
+                    required
+                    placeholder="Ingresa tu gmail"
+                  />
+                </div>
+
+                <div class="col-lg-12 text-center cont">
+                  <label for="descripcion-de-problema">Descripcion</label>
+                  <select class="select text-center" name="opcion-contacto">
+                    <option selected></option>
+                    <option class="text-black" value="1">
+                      No me corre el sitio
+                    </option>
+                    <option class="text-black" value="2">
+                      Problemas técnicos
+                    </option>
+                    <option class="text-black" value="3">
+                      Consultas o preguntas
+                    </option>
+                    <option class="text-black" value="4">
+                      Sugerencias o mejoras
+                    </option>
+                    <option class="text-black" value="5">
+                      Actualizaciones o mantenimiento
+                    </option>
+                    <option class="text-black" value="6">
+                      Soporte técnico
+                    </option>
+                    <option class="text-black" value="7">
+                      Reporte de errores de seguridad
+                    </option>
+                  </select>
+                </div>
+                <div class="col-lg-12 cont">
+                  <label for="Menssage">Menssage</label>
+                  <div class="text-center">
+                    <textarea
+                      class="text-center"
+                      name="message"
+                      class="form-control"
+                      id="message"
+                      placeholder="Ingresa tu menssage"
+                      required=""
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <button
+                    class="btn btn-outline-warning bg-warning text-black"
+                    type="submit"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

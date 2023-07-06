@@ -1,0 +1,687 @@
+{% extends 'index.html' %} {% block content %}
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<!--                                                  Contenido                                                  -->
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+{% load static %}
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<!--                                                  Contenido                                                  -->
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+
+<div class="row section">
+  <div class="col-sm-12">
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body fondo-productos">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta es una tarjeta más amplia con texto de apoyo a continuación
+              como introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta tarjeta tiene texto de apoyo a continuación como una
+              introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta es una tarjeta más amplia con texto de apoyo a continuación
+              como introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta es una tarjeta más amplia con texto de apoyo a continuación
+              como introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta es una tarjeta más amplia con texto de apoyo a continuación
+              como introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta es una tarjeta más amplia con texto de apoyo a continuación
+              como introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta es una tarjeta más amplia con texto de apoyo a continuación
+              como introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta es una tarjeta más amplia con texto de apoyo a continuación
+              como introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta es una tarjeta más amplia con texto de apoyo a continuación
+              como introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 product">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="{% static 'imagenes/img sct.jpg' %}"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">
+              Esta es una tarjeta más amplia con texto de apoyo a continuación
+              como introducción natural a contenido adicional.
+            </p>
+          </div>
+          <div class="card-footer meInteresa">
+            <button class="btn btn-outline-warning bg-warning text-black">
+              Me interesa
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends 'index.html' %} {% block content %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/subirproyec.css' %}" />
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 1 d-flex justify-content-center">
+        <section class="caja">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form action="" method="post" class="form">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-12 user">
+                                <h1 class="text-warning"><strong>Baselltech</strong></h1>
+                            </div>
+                            {% if r %}
+                                <div class="alert alert-success d-flex align-items-center" role="alert">
+                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                                <div>
+                                    <h5>{{ r }}</h5>
+                                </div>
+                                </div>
+                            {% endif %}
+
+                            {% if r2 %}
+                                <div class="alert alert-danger d-flex align-items-center" role="alert">
+                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                                    <div>
+                                    <h5>{{ r2 }}</h5>
+                                    </div>
+                                </div>
+                            {% endif %}
+                                
+                            <div class="col-lg-12 user">
+                                <label for="nombre-proyecto" >Nombre proyecto</label>
+                                    <input type="text" name="nombre" id="nombre-proyecto" maxlength="15" minlength="3" required placeholder="nombre de proyecto"/>
+                            </div>
+                            <div class="col-lg-12 user">
+                                <label for="descripcion-de-proyecto">Descripcion</label>
+                                <input
+                                    type="text"
+                                    name="descripcion-de-proyecto"
+                                    id="descripcion-de-proyecto"
+                                    placeholder="Descripcion de tu proyecto"
+                                />
+                            </div>
+                            <div class="col-lg-12 user">
+                                <label for="inversion-proyecto">Inversion de tu proyecto</label>
+                                <input
+                                    type="text"
+                                    name="inversion-proyecto"
+                                    id="inversion-proyecto"
+                                    placeholder="ingrese un monto estimado"
+                                />
+                            </div>
+                            <div class="col-lg-12 user">
+                                <label for="">ingresa url de repositorio</label>
+                                <input type="url" name="repositorio" id="" required placeholder="Ingresa url del proyecto"/>
+                            </div>
+                            <div class="col-lg-12 user">
+                                <label for="archivo-proyecto">Imagenes</label>
+                                <input
+                                    type="file"
+                                    name="archivo-proyecto"
+                                    id=""
+                                    placeholder="Subir documento de que se trata tu proyecto"
+                                 required class="file"/>
+                            </div>
+                            
+                            <div class="col-lg-12 ">
+                                <button class="btn btn-outline-warning bg-warning text-black" type="submit">Subir</button>
+                            </div>
+                            
+                        </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+        <!-- <form action="" method="get" class="">
+          <div class="col-lg-12">
+            <label for="nombre-proyecto"></label>
+            <input
+              type="text"
+              id="nombre-proyecto"
+              placeholder="nombre de proyecto"
+            />
+          </div>
+
+          <label for="descripcion-de-proyecto">Descripcion</label>
+          <input
+            type="text"
+            name=""
+            id="descripcion-de-proyecto"
+            placeholder="Descripcion de tu proyecto"
+          />
+          <label for="inversion-proyecto">Inversion de tu proyecto</label>
+          <input
+            type="text"
+            name=""
+            id="inversion-proyecto"
+            placeholder="ingrese un monto estimado"
+          />
+          <label for="">ingresa url de repositorio</label>
+          <input type="url" name="" id="" />
+
+          <label for="archivo-proyecto">Documento</label>
+          <input
+            type="file"
+            name="archivo-proyecto"
+            id=""
+            placeholder="Subir documento de que se trata tu proyecto"
+          />
+          <h2>Informacion personal</h2>
+          <label for="nombre-cliente">Tu nombre</label>
+          <input
+            type="text"
+            name=""
+            id="nombre-cliente"
+            placeholder="Ingresa tu nombre"
+          />
+          <label for="apellido-cliente">Tu apelido</label>
+          <input type="text" id="apellido-cliente" name="" />
+          <label for="fecha-nacimiento-cliente">Fecha de Nacimiento</label>
+          <input type="date" id="fecha-nacimiento-cliente" name="" />
+          <label for="dni-cliente">DNI</label>
+          <input type="text" id="dni-cliente" name="" />
+          <label for="gmail-cliente">Gmail</label>
+          <input type="email" id="gmail-cliente" name="" />
+          <label for="telefono-cliente">Telefono</label>
+          <input type="tel" name="" id="telefono-cliente" />
+
+          <button type="submit">Subir</button>
+        </form> -->
+      </section>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

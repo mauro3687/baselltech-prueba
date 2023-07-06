@@ -1,0 +1,70 @@
+{% extends 'index.html' %} {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/subirproyec.css' %}" />
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-12 1 d-flex justify-content-center">
+        <section class="caja">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form action="" method="post" class="form">
+                        {% csrf_token %}
+                        <div class="row">
+                           
+                            <div class="col-lg-12 user">
+                                <h2 class="title-subir-projec ">
+                                  Inicio Sesion
+                                </h2>
+                            </div>
+                            <div class="col-lg-12 user">
+                                <label for="gmail">Gmail</label>
+                                <input
+                                    type="text"
+                                    name="gmail"
+                                    id="nombre-cliente"
+                                    placeholder="Ingresa tu Gmail"
+                                />
+
+                            </div>
+                            <div class="col-lg-12 user">
+                                <label for="contraseña">Contraseña</label>
+                                <input type="text" id="contraseña"    name="contraseña" placeholder="Ingresa tu Contraseña"/>
+                            </div>
+                            
+                            
+                            <div class="col-lg-12 ">
+                                <a href="inicio"><button class="btn btn-outline-warning bg-warning text-black" type="submit">Entrar</button></a>
+                                <
+                                <a href="/registro"><button class="btn btn-outline-warning bg-warning text-black" type="button">Registrarse</button></a>
+
+                            </div>
+
+                           
+                            
+                        </div>
+                            
+                        </div>
+                    </form>
+                    {% if alert %}
+                        <div class="alert alert-success d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                                <div>
+                                    <h5>{{ alert }}</h5>
+                                </div>
+                                </div>
+                            {% endif %}
+                    {% if alertnot %}
+                            <div class="alert alert-danger d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                                <div>
+                                <h5>{{ alertnot }}</h5>
+                                </div>
+                            </div>
+                    {% endif %}     
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,55 @@
+/* VARIABLES PARA COLORES */
+
+:root {
+  --color--1: #56c9ed;
+  --color--fondo: #3a3939;
+}
+
+body {
+  background: var(--color--fondo);
+}
+.hamburguet {
+  background: var(--color--1);
+}
+.nas {
+  color: var(--color--1);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.carrito::after {
+  border-color: #56c9ed;
+}
+/* contenidos de los productos  */
+.section {
+  margin-top: 5%;
+}
+.product {
+  background: rgba(86, 205, 232, 0.684);
+  color: white;
+}
+
+.info {
+  font-family: "Bree Serif", serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 10%;
+}
+.info h2 {
+  display: flex;
+  justify-content: center;
+  color: orange;
+}
+.info p {
+  color: var(--color--1);
+}
+.meInteresa {
+  display: flex;
+  justify-content: center;
+}
+/* footer */
+/* .img-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

@@ -1,0 +1,53 @@
+
+.cajita {
+  background:#1817172c;
+  height: 90%;
+  width: 60%;
+  box-shadow: 0 10px 8px 2px;
+  margin-bottom: 10%;
+}
+
+.cont {
+  margin-bottom: 2%;
+  box-sizing: border-box;
+}
+.cont input {
+  width: 100%;
+  outline: none;
+  background: none;
+  color: #fff;
+  border: none;
+  margin-bottom: 2%;
+}
+.cont input:focus {
+  border-bottom: 2px solid #9ea4db;
+  transition: 30s;
+}
+.cont select{
+    width: 100%;
+    outline: none;
+    background: none;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 2%;
+}
+.cont select:focus {
+    border-bottom: 2px solid #9ea4db;
+    transition: 30s;
+  }
+.cont textarea{
+    width: 100%;
+    outline: none;
+    background: none;
+    color: #fff;
+    border: none;
+    margin-bottom: 1%;
+}
+.cont textarea:focus{
+    border-bottom: 2px solid #8f97de;
+    transition: 30s;
+}
+.cont label {
+  color: #7b7beb9c;
+  font-weight: 200;
+}

@@ -1,0 +1,44 @@
+:root {
+  --color-back-subir: #1817172c;
+}
+.caja {
+  background: var(--color-back-subir);
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  box-shadow: 0 10px 8px 2px;
+  margin-bottom: 10%;
+}
+
+.title-subir-projec {
+  color: var(--color--1);
+  font-weight: 500;
+}
+.user {
+  margin-bottom: 2%;
+  box-sizing: border-box;
+}
+.user input {
+  width: 100%;
+  outline: none;
+  background: none;
+  color: #fff;
+  border: none;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.user input:focus {
+  border-bottom: 2px solid #9ea4db;
+  transition: 30s;
+}
+.user > label {
+  color: #7b7beb9c;
+  font-weight: 200;
+}
+.letra-link {
+  font-size: 12px;
+  color: #fff;
+}
